@@ -1,0 +1,30 @@
+{
+
+     "users":[ 
+        {
+    "name":"kilwa",
+    "age": 19,
+    "hobby" :"programation",
+    "skils":["html","css","JS"],
+    "adresse":{
+        "city":"casa",
+        "country":"morocco"
+    }
+    
+},
+
+{
+    "name":"ilyas",
+    "age": 20,
+    "hobby" :"football",
+    "skils":["sql","php","java"],
+    "adresse":{
+        "city":"casablanca",
+        "country":"rca",      
+        "rajawi":true
+    }
+}
+]
+
+
+}   
