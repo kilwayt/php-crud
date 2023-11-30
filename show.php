@@ -25,6 +25,9 @@ include 'connect.php';
       <th scope="col">phone</th>
       <th scope="col">password</th>
       <th scope="col">action</th>
+      <th scope="col">IMAGE</th>
+
+
 
 
     </tr>
@@ -40,12 +43,17 @@ include 'connect.php';
           $email= $row['email'] ;
           $phone= $row['phone'] ;
           $password= $row['password'] ;
+          $file= $row['file'] ;
+
+          
           echo '  <tr>
           <th scope="row">'.$id.'</th>
           <td>'.$name.'</td>
           <td>'.$email.'</td>
           <td>'.$phone.'</td>
           <td>'.$password.'</td>
+          <td>'.$file.'</td>
+
           <td> <button class="btn btn-danger text-light"> <a href="delete.php?iddelete='.$id.'"class=" text-light">DELETE</button> </a>
           <button class="btn btn-primary text-light"> <a href="update.php?idupdate='.$id.'"class=" text-light">UPDATE</button> </a>
           

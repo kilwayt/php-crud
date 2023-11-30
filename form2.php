@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
 <body>
     
 <div class="container mt-5">
-    <form id="registrationForm"   method="post">
+    <form id="registrationForm"   method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" name="name" id="name" required>
@@ -53,9 +53,14 @@ if(isset($_POST['submit'])){
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password" required>
+            <br>
+            <div class="form-group">
+                <input type="file" class="form-control" name="file"  required> 
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
     </form>
+    
 </body>
 </html>
